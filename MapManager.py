@@ -13,9 +13,9 @@ if os.path.exists(SECRET_FILE):
 else:
     # Mapboxのタイル情報を指定してください
     secret = {
-        "mapbox_url", "xxxxx",
-        "mapbox_api_key", "xxxxx",
-        "mapbox_attr", "xxxxx"
+        "mapbox_url": "xxxxx",
+        "mapbox_api_key": "xxxxx",
+        "mapbox_attr": "xxxxx"
     }
 
 tiles = secret["mapbox_url"] + "?access_token=" + secret["mapbox_api_key"]

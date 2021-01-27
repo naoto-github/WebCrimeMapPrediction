@@ -4,7 +4,6 @@ from torchvision import transforms
 import MapManager
 from CrimeMapNetwork import CrimeMapNetwork
 
-
 app = Flask(__name__)
 
 # 地図情報の初期化
@@ -88,7 +87,16 @@ def post():
         classification = classify(map_img)
         
         # マーカーの追加
-        popup_text = f"<div style='width:260px; height:380px'><p><img src='data:image/png;base64,{map_png}'</p><p>緯度: {lat}<br>経度: {lng}</p> <p>車上ねらい:{classification[0]}<br> 自動販売機ねらい:{classification[1]}<br> 自動車盗:{classification[2]}</p></div>"
+        popup_text = f"<div style='width:260px; height:380px'>" \
+                     f"<p><img src='data:image/png;base64,{map_png}'</p>" \
+                     f"<p>緯度: {lat}<br>経度: {lng}</p>" \
+                     f"<p>" \
+                     f"車上ねらい: {classification[0]}<br>" \
+                     f"自動販売機ねらい: {classification[1]}<br>" \
+                     f"自動車盗: {classification[2]}<br>" \
+                     f"</p>" \
+                     f"</div>"
+        
         map_marker = {
             "lat": lat,
             "lng": lng,
