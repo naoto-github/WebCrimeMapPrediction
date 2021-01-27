@@ -136,13 +136,16 @@
 	      marker.addTo(map);
 	      marker.openPopup();
 	  });
+
+	  // マップの移動
+	  map.panTo(center)
 	  
 	  // キャプチャエリアの表示
 	  function getCaptureArea(){
 
 	      angle1 = 45
 	      angle2 = 225
-	      distance = ((0.457 * 256) / 2) * 2 * Math.sqrt(2) // 約165.45メートル
+	      distance = 175
 	      
 	      center = map.getCenter();
 	      point1 = L.GeometryUtil.destination(center, angle1, distance)
