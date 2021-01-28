@@ -119,7 +119,7 @@ CNNのモデルの精度を評価します．データセット（3,000件）に
 
 上記のモデルをウェブアプリ「犯罪予測マップ」として再構築しました．任意の地域に対して，犯罪種別の起こりやすさ予測することが可能です．
 
-[![](http://img.youtube.com/vi/YXLXWoVWAeE/0.jpg)](http://www.youtube.com/watch?v=YXLXWoVWAeE "")
+[![](https://i.gyazo.com/abd58f6320628475f27fb60f89580885.jpg)](http://www.youtube.com/watch?v=YXLXWoVWAeE "")
 
 ## 作品の実用度
 
