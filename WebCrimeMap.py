@@ -87,10 +87,10 @@ def post():
         classification = classify(map_img)
         
         # マーカーの追加
-        popup_text = f"<div style='width:260px; height:380px'>" \
-                     f"<p><img src='data:image/png;base64,{map_png}'</p>" \
-                     f"<p>緯度: {lat}<br>経度: {lng}</p>" \
-                     f"<p>" \
+        popup_text = f"<div style='width:200px; height:260px;'>" \
+                     f"<p style='margin:0px; padding:0px' ><img style='width:180px' src='data:image/png;base64,{map_png}'</p>" \
+                     f"<p style='margin:2px; padding:0px' >緯度: {lat}<br>経度: {lng}</p>" \
+                     f"<p style='margin:2px; padding:0px'>" \
                      f"車上ねらい: {classification[0]}<br>" \
                      f"自動販売機ねらい: {classification[1]}<br>" \
                      f"自動車盗: {classification[2]}<br>" \
